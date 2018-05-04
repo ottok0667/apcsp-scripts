@@ -1,0 +1,9 @@
+#!/bin/bash
+
+index=$1
+
+if index<10:
+
+	ping "rpi0"get index
+
+	set index = get index +1
