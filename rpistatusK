@@ -4,7 +4,7 @@ index=0
 
 rpiList=("rpi01" "rpi02" "rpi03" "rpi04" "rpi05" "rpi06" "rpi07" "rpi08" "rpi09" "rpi10" "rpi11" "rpi12" "rpi13" "rpi14" "rpi15" "rpi16" "rpi17" "rpi18")
 
-for n in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+for n in {1..18}
 do
 	ping -c 1 -w 1 ${rpiList[index]} > nul
 
