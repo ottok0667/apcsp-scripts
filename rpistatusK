@@ -4,15 +4,9 @@ index=0
 
 rpiList=("rpi01" "rpi02" "rpi03" "rpi04" "rpi05" "rpi06" "rpi07" "rpi08" "rpi09" "rpi10" "rpi11" "rpi12" "rpi13" "rpi14" "rpi15" "rpi16")
 
-#ping -c 1 -w 1 rpi06
-
 for n in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
 do
 	ping -c 1 -w 1 ${rpiList[index]} > nul
-#	index=$((index+1))
-#	echo $index
-#	echo hi
-#	ping -c 1 -w 1 n     #${rpiList[index]}
 
 	if  [ $? -eq 0 ]
 	then
@@ -24,10 +18,4 @@ do
 	index=$((index+1))
 
 done
-
-#ping -c 1 -w 1 rpi06
-#if [ $? -eq 0 ]
-#then
-#	echo Pi ALive
-#fi
 
